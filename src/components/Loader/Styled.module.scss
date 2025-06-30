@@ -1,0 +1,26 @@
+.loader {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 60px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+
+  p {
+    font-family: 'Mouse Memoirs';
+    color: black;
+    font-size: 2rem;
+  }
+
+  .dots {
+    display: inline-block;
+    width: 1ch;
+  }
+}

@@ -1,0 +1,172 @@
+.newPasswordBody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: var(--image-background);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225 207 207 / 15%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  @media (max-width: 415px) {
+    background-image: none;
+    background-color: black;
+  }
+
+  .disabled {
+    pointer-events: none;
+    opacity: 0.95;
+    cursor: not-allowed;
+  }
+
+  .newPasswordForm {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 370px;
+    padding: 2rem;
+    background: rgba(9, 9, 9, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(16, 16, 16, 0.3);
+
+    @media (max-width: 480px) {
+      max-width: 350px;
+    }
+
+    @media (max-width: 440px) {
+      max-width: 330px;
+    }
+
+    @media (max-width: 420px) {
+      max-width: 310px;
+    }
+
+    @media (max-width: 415px) {
+      max-width: 330px;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      background: none;
+    }
+
+    @media (max-width: 370px) {
+      max-width: 300px;
+    }
+
+    @media (max-width: 330px) {
+      max-width: 95%;
+    }
+
+    @media (max-width: 310px) {
+      max-width: 90%;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: white;
+      font-size: 29px;
+
+      @media (max-width: 480px) {
+        font-size: 27px;
+      }
+
+      @media (max-width: 415px) {
+        font-size: 29px;
+      }
+    }
+
+    .passwordText {
+      color: white;
+      font-size: 16px;
+      font-weight: 100;
+      margin: 8px 0;
+      letter-spacing: 0.09rem;
+      text-align: center;
+
+      @media (max-width: 415px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .passwordWrapper {
+      position: relative;
+
+      .showPasswordBtn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: #58a6fb;
+        font-size: 13px;
+        cursor: pointer;
+
+        svg {
+          height: 1.6em;
+          width: 1.6em;
+        }
+
+        &:hover {
+          text-decoration: underline;
+
+
+        }
+      }
+    }
+
+  }
+
+  .inputGroup {
+    margin-bottom: 1rem;
+
+    @media (max-width: 415px) {
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 13px;
+      color: white;
+    }
+
+    input {
+      width: 92%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      color: white;
+      background: transparent;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /login/
+Disallow: /cadastro/
+Disallow: /esqueceu-senha/
+Disallow: /recuperar-senha/
+Disallow: /404/
