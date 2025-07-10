@@ -33,8 +33,11 @@ export const AuthProvider = ({ children }) => {
     try {
       const data = await postLogin(username, password, recaptchaToken);
       
-      if (!data.success) {
-        showModal(data.message || "Credenciais inválidas.", false, closeAllModals);
+      if (!data.token) {
+        const message = data.message || data?.success === false
+        ? "Credenciais inválidas."
+        : "Erro ao autenticar. Tente novamente.";
+        showModal(message, false, closeAllModals);
         return;
       }
       
