@@ -32,8 +32,13 @@ export const AuthProvider = ({ children }) => {
   const login = async (username, password, remember, recaptchaToken) => {
     try {
       const data = await postLogin(username, password, recaptchaToken);
+      
+      if (!data.success) {
+        showModal(data.message || "Credenciais inválidas.", false, closeAllModals);
+        return;
+      }
+      
       const token = data.token;
-
       if (token) {
         localStorage.setItem("token", token);
         const decoded = jwtDecode(token);
