@@ -54,7 +54,7 @@ export const AuthProvider = ({ children }) => {
 
         navigate("/skills");
       }
-    } catch {
+    } catch (error) {
       const response = error?.response?.data || "Erro ao autenticar. Tente novamente.";
       showModal(response, false, closeAllModals);
     }
