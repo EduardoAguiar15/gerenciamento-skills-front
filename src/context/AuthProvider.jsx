@@ -47,7 +47,8 @@ export const AuthProvider = ({ children }) => {
         navigate("/skills");
       }
     } catch {
-      showModal("Usuário ou senha inválidos.", false, closeAllModals);
+      const response = error?.response?.data || "Erro ao autenticar. Tente novamente.";
+      showModal(response, false, closeAllModals);
     }
   };
 
