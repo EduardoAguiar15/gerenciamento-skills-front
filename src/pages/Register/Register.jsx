@@ -141,7 +141,7 @@ const Register = () => {
                     ref={recaptchaRef}
                     onExpired={() => recaptchaRef.current?.reset()}
                 />
-                <h1>Cadastro</h1>
+                <h1>Cadastrar</h1>
 
                 <div className={styles.inputGroup}>
                     <label htmlFor="username">Email</label>
