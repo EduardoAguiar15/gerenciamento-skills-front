@@ -19,8 +19,10 @@ const NewPassword = () => {
 
         const tokenRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
         if (!extractedToken || !tokenRegex.test(extractedToken)) {
-            showModal('Token inválido ou ausente.', false);
-            navigate("/login");
+            setTimeout(() => {
+                showModal('Token inválido ou ausente.', false);
+                navigate("/login");
+            }, 0);
         }
     }, [location, navigate, showModal]);
 

@@ -82,7 +82,6 @@ const Forgot = () => {
             return;
         }
 
-        // const inicioRequisicao = Date.now();
         try {
             const response = await postSolicitaRedefinir(forgotData.email, recaptchaToken);
 
