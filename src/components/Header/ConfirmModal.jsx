@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 
 function ConfirmModal({ onCancel, onClose, email, senhaAtual, novaSenha, isPasswordFieldVisible, buttonSelected, modalSessionId }) {
 
-    const { user, updateToken, logout } = useAuth();
+    const { user, updateToken, handleDeleteAccount } = useAuth();
     const { showModal } = useModal([]);
     const [modalType, setModalType] = useState(false);
     const navigate = useNavigate();
