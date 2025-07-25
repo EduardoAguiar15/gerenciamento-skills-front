@@ -36,7 +36,7 @@ function ConfirmModal({ onCancel, onClose, email, senhaAtual, novaSenha, isPassw
             const response = await deleteUsuario(userId);
 
             if (response.status === 204) {
-                logout();
+                handleDeleteAccount();
                 showResultModal('Usuário deletado com sucesso!', true);
                 navigate("/login");
             }
