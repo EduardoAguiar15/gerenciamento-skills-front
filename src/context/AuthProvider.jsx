@@ -71,7 +71,6 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("password");
     localStorage.removeItem("rememberMe");
     setUser(null);
-    navigate("/login");
   };
   
   const updateToken = useCallback((novoToken) => {
