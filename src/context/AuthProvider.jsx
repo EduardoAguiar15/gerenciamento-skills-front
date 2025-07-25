@@ -64,7 +64,16 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("token");
     setUser(null);
   };
-
+  
+  const handleDeleteAccount = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+    localStorage.removeItem("rememberMe");
+    setUser(null);
+    navigate("/login");
+  };
+  
   const updateToken = useCallback((novoToken) => {
     localStorage.removeItem("token");
     localStorage.removeItem("username");
@@ -78,7 +87,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, rememberMe, setRememberMe, updateToken }}>
+    <AuthContext.Provider value={{ user, login, logout, rememberMe, setRememberMe, updateToken, handleDeleteAccount }}>
       {children}
     </AuthContext.Provider>
   );
