@@ -52,8 +52,8 @@ function SkillsModal({ onSkillSelect, selectedSkills }) {
                         <button className={styles.closeButton} onClick={() => setIsModalOpen(false)}>
                             &times;
                         </button>
-                        <h2>Adicionar Skill</h2>
-                        <p>Aqui você pode adicionar novas skills!</p>
+                        <h2 className={styles.modalTitle}>Adicionar Skill</h2>
+                        <p className={styles.modalText}>Aqui você pode adicionar novas skills!</p>
                         <div className={styles.dropdown}>
                             <button
                                 className={styles.dropdownButton}
