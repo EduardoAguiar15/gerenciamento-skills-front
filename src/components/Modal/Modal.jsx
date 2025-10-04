@@ -46,7 +46,7 @@ const Modal = ({ message, isSuccess, onCloseCallback, sessionId, validateSession
         <div className={styles.iconWrapper}>
           {isSuccess ? <CheckCircleIcon color="success" fontSize="large" /> : <CancelIcon color="error" fontSize="large" />}
         </div>
-        <p>{message}</p>
+        <p className={styles.messageModal}>{message}</p>
         <div
           className={`${styles.progressBar} ${isSuccess ? styles.success : styles.error}`}
           style={{ width: `${progress}%` }}
