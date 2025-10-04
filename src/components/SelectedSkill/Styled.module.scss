@@ -54,7 +54,11 @@
             width: 97%;
         }
 
-        p {
+        .skillNome, .skillDescription{
+            color: var(--text-color);
+        }
+        
+        .skillDescription {
             width: 95%;
             margin-block-end: auto;
             text-align: center;
