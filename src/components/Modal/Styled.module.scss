@@ -69,3 +69,7 @@
   font-size: 18px;
   cursor: pointer;
 }
+
+.closeButton, .messageModal {
+  color: var(--text-color);
+}
