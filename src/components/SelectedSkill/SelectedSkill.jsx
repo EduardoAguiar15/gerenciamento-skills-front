@@ -18,9 +18,9 @@ const SelectedSkill = ({
         <div className={styles.selectedSkill}>
             <div className={styles.divSkills}>
                 <div className={styles.containerSkill}>
-                    <h3>{skill.skillNome}</h3>
+                    <h3 className={styles.skillNome}>{skill.skillNome}</h3>
                     <img src={skillImage} alt={skillAlt} className={styles.skillImg} />
-                    <p>{skillDescription}</p>
+                    <p className={styles.skillDescription>{skillDescription}</p>
                     <div className={styles.buttons}>
                         <div className={styles.levelControl}>
                             <button onClick={() => onDecrement(skill.skillId)}>-</button>
