@@ -13,6 +13,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --text-color: rgb(33,53,71);
   --image-background: url('https://res.cloudinary.com/dptl0qlqr/image/upload/f_auto,q_auto,w_1920/background_qut4pw.png');
 }
 
