@@ -4,11 +4,7 @@ Desenvolvi este sistema a partir de um desafio técnico com foco no **gerenciame
 Após concluir o desafio inicial, decidi evoluir a aplicação, adicionando novas funcionalidades e tornando-a mais robusta e completa.
 Esse projeto foi uma excelente oportunidade para consolidar conhecimentos em **estilização de componente, animações, segurança com Google reCAPTCHA e boas práticas de desenvolvimento Fullstack**.
 
-
-
-Uploading gerenciamentoSkills.mp4…
-
-
+[Uploading gerenciamentoSkills.mp4…](https://github.com/user-attachments/assets/2fec261f-7a6f-407b-80e8-eb3d2cdcb368)
 
 ## 🎨 Frontend (React + Vite)
 - **React Router DOM**
