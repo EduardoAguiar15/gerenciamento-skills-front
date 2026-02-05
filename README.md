@@ -4,9 +4,7 @@ Desenvolvi este sistema a partir de um desafio técnico com foco no **gerenciame
 Após concluir o desafio inicial, decidi evoluir a aplicação, adicionando novas funcionalidades e tornando-a mais robusta e completa.
 Esse projeto foi uma excelente oportunidade para consolidar conhecimentos em **estilização de componente, animações, segurança com Google reCAPTCHA e boas práticas de desenvolvimento Fullstack**.
 
-https://www.linkedin.com/posts/eduaguiaroficial_fullstackdeveloper-java-spring-activity-7356448717496815616-ccF1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD_qu6sBTjXaxrp5GP_-UrTnsmjjfgBDYfw
-
-![GerenciamentoSkills 00a75eb03130a22d3c40](https://github.com/user-attachments/assets/664bc1df-eaaa-4ece-a815-78c3ee1b94a7)
+Uploading gerenciamentoSkills.mp4…
 
 ## 🎨 Frontend (React + Vite)
 - **React Router DOM**
